@@ -25,7 +25,7 @@
 	$: currentSound = glyphs.filter(x => x.currentSound !== "").map(x => x.currentSound).join("");
 </script>
 
-<div class="header" style="position: fixed">
+<div class="header" style="position: fixed; background-color:white">
 	<div class="current-sound">{currentSound}</div>
 	<div>		
 		<button on:click="{addGlyph}">Add Glyph</button>
