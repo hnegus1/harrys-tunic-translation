@@ -1,0 +1,167 @@
+[
+    {
+        "sound": "aa",
+        "conditions": [1, 10, 2, 3]
+    },
+    {
+        "sound": "ar",
+        "conditions": [1, 10, 4, 13]
+    },
+    {
+        "sound": "ay",
+        "conditions": [1]
+    },
+    {
+        "sound": "eh",
+        "conditions": [2, 3, 4, 13]
+    },
+    {
+        "sound": "ee",
+        "conditions": [1, 2, 3, 4, 13]
+    },
+    {
+        "sound": "eer",
+        "conditions": [1, 2, 3, 13]
+    },
+    {
+        "sound": "uh",
+        "conditions": [1, 10]
+    },
+    {
+        "sound": "ere",
+        "conditions": [2, 3, 13]
+    },
+    {
+        "sound": "i",
+        "conditions": [4, 13]
+    },
+    {
+        "sound": "ie",
+        "conditions": [10]
+    },
+    {
+        "sound": "ir",
+        "conditions": [2, 3, 4, 10, 13]
+    },
+    {
+        "sound": "oh",
+        "conditions": [1, 2, 3, 4, 10, 13]
+    },
+    {
+        "sound": "oi",
+        "conditions": [4]
+    },
+    {
+        "sound": "oo",
+        "conditions": [1, 2, 3, 4, 10]
+    },
+    {
+        "sound": "ou",
+        "conditions": [2, 3, 4]
+    },
+    {
+        "sound": "ow",
+        "conditions": [13]
+    },
+    {
+        "sound": "ore",
+        "conditions": [1, 2, 3, 10, 13]
+    },
+    
+    {
+        "sound": "b",
+        "conditions": [7, 8, 12]
+    },
+    {
+        "sound": "ch",
+        "conditions": [5, 8, 9]
+    },
+    {
+        "sound": "d",
+        "conditions": [7, 8, 6, 12]
+    },
+    {
+        "sound": "f",
+        "conditions": [11, 8, 6, 9]
+    },
+    {
+        "sound": "g",
+        "conditions": [11, 8, 12, 9]
+    },
+    {
+        "sound": "h",
+        "conditions": [7, 9, 12]
+    },
+    {
+        "sound": "j",
+        "conditions": [7, 8, 6]
+    },
+    {
+        "sound": "k",
+        "conditions": [11, 8, 12]
+    },
+    {
+        "sound": "l",
+        "conditions": [7, 8, 9]
+    },
+    {
+        "sound": "m",
+        "conditions": [6, 12]
+    },
+    {
+        "sound": "n",
+        "conditions": [5, 6, 12]
+    },
+    {
+        "sound": "ng",
+        "conditions": [5, 11, 7, 8, 12, 6, 9]
+    },
+    {
+        "sound": "p",
+        "conditions": [11, 8, 9]
+    },
+    {
+        "sound": "r",
+        "conditions": [7, 8, 11, 9]
+    },
+    {
+        "sound": "s",
+        "conditions": [7, 8, 11, 6, 9]
+    },
+    {
+        "sound": "sh",
+        "conditions": [5, 11, 8, 6, 12, 9]
+    },
+    {
+        "sound": "t",
+        "conditions": [5, 11, 8, 9]
+    },
+    {
+        "sound": "th",
+        "conditions": [5, 11, 8, 9, 7]
+    },
+    {
+        "sound": "thh",
+        "conditions": [6, 9, 12, 7, 8]
+    },
+    {
+        "sound": "v",
+        "conditions": [5, 7, 8, 12]
+    },
+    {
+        "sound": "w",
+        "conditions": [5, 11]
+    },
+    {
+        "sound": "y",
+        "conditions": [5, 7, 8, 9]
+    },
+    {
+        "sound": "z",
+        "conditions": [5, 7, 8, 9, 12]
+    },
+    {
+        "sound": "zu",
+        "conditions": [5, 7, 8, 6, 12]
+    }
+]
