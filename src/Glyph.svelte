@@ -99,7 +99,7 @@
             <path stroke-width="6" id="svg_24" d="m287.38323,197.08282l-261.83586,0" opacity="undefined" stroke="#bf0000" fill="#000"/>
     
             {#each glpyhsParts as part, i}
-                <line on:click="{handleClick}" id="{part.id}" y2="{part.y2}" x2="{part.x2}" y1="{part.y1}" x1="{part.x1}" stroke-width="7" stroke={part.checked ? "#F00" : "#000"} fill="none"/>
+                <line on:click="{handleClick}" id="{part.id}" y2="{part.y2}" x2="{part.x2}" y1="{part.y1}" x1="{part.x1}" stroke-width="12" stroke={part.checked ? "#F00" : "#000"} fill="none"/>
             {/each}
         </g>
     </svg>
