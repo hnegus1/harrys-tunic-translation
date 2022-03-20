@@ -6,6 +6,8 @@
     export let glyphJson;
     export let languageJson;
 
+    let swapSounds = false;
+
     let glpyhsParts = glyphJson.default.map(x => {
         return {
             ...x,
@@ -32,19 +34,35 @@
         dispatch('delete');
     }
 
+    function toggleSwapSounds(){
+        swapSounds = !swapSounds;
+        evaluateWord()
+    }
+
     function evaluateWord(){
         const checkedGlyphParts = glpyhsParts.filter(x => x.checked).map(x => parseInt(x.id.split("_")[1]))
+
+        const checkVowelParts = glpyhsParts.filter(x => x.checked && x.isVowel).map(x => parseInt(x.id.split("_")[1]))
+        const checkConsonantParts = glpyhsParts.filter(x => x.checked && !x.isVowel).map(x => parseInt(x.id.split("_")[1]))
         //console.log(checkedGlyphParts)
         
         const glyphSearch = language.filter(x => areEqual(x.conditions, checkedGlyphParts));
+
+        const vowelSearch = language.filter(x => areEqual(x.conditions, checkVowelParts));
+        const consonantSearch = language.filter(x => areEqual(x.conditions, checkConsonantParts));
         //console.log(language)
         //console.log(glyphSearch)
 
-        if(glyphSearch.length === 1){
-            //console.log(glyphSearch[0].sound)
-            currentSound = glyphSearch[0].sound
+        let vowelSound = "";
+        let consonantSound = ""
+
+        if(vowelSearch.length === 1) vowelSound = vowelSearch[0].sound
+        if(consonantSearch.length === 1) consonantSound = consonantSearch[0].sound
+
+        if(swapSounds){
+            currentSound = vowelSound + consonantSound
         }else{
-            currentSound = ""
+            currentSound = consonantSound + vowelSound
         }
     }
 
@@ -77,7 +95,7 @@
             <ellipse ry="7.90698" rx="7.90698" id="svg_18" cy="300" cx="50" stroke="#000" fill="none"/>
             <ellipse ry="7.90698" rx="7.90698" id="svg_19" cy="300" cx="250" stroke="#000" fill="none"/>
             <ellipse ry="7.90698" rx="7.90698" id="svg_20" cy="350" cx="150" stroke="#000" fill="none"/>
-            <ellipse ry="7.90698" rx="7.90698" id="svg_21" cy="400" cx="150" stroke="#000" fill="none"/>
+            <ellipse on:click="{toggleSwapSounds}" ry="7.90698" rx="7.90698" id="swap_sounds" cy="400" cx="150" stroke={swapSounds ? "#F00" : "#000"} fill={swapSounds ? "#F00" : "#000"}/>
             <path stroke-width="6" id="svg_24" d="m287.38323,197.08282l-261.83586,0" opacity="undefined" stroke="#bf0000" fill="#000"/>
     
             {#each glpyhsParts as part, i}

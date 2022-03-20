@@ -98,7 +98,7 @@
     },
     {
         "sound": "k",
-        "conditions": [11, 8, 12]
+        "conditions": [11, 7, 8, 12]
     },
     {
         "sound": "l",
